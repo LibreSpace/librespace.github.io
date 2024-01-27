@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>LibreSpace</title>
+  </head>
+
+  <body>
+    <div class="header">
+      <a href="../index.html" class="logo">LibreSpace</a>
+      <div class="header-right">
+        <a href="../index.html">/головна</a>
+        <a class="active" href="#news">/новини</a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="news">
+        <h1 class="title-h1">новини</h1>
+      </div>
+      <div class="projects">
+        <!-- 27.01.2024 -->
+        <article class="card">
+          <img src="../images/librespace_default.png" alt="alert" />
+          <div class="text-project">
+            <a href="https://t.me/linux_ukraine/365">Вразливість в утиліті GNU split, що веде до переповнення буфера.</a>
+            <p>В утиліті split, що поставляється в пакеті <a href="https://www.gnu.org/software/coreutils">GNU coreutils</a> і застосовується для поділу великих файлів на частини, виявлено вразливість <a href="https://github.com/Valentin-Metz/writeup_split">CVE-2024-0684</a>,
+              що призводить до переповнення буфера при обробці довгих рядків (кілька сотень байт), у разі використання в <a href="https://github.com/coreutils/coreutils/blob/master/src/split.c">split</a>
+              опції --line-bytes. <br/> <br/>
+
+Вразливість була виявлена в ході аналізу збоїв, що виникають при використанні утиліти split для поділу даних, що передаються за допомогою QR-кодів.<br/><br/>
+
+Вразливість викликана помилкою, допущеною у випуску coreutils 7.2 при заміні виклику функції xrealloc на xpalloc. Патч із виправленням вже прийнято в кодову базу, але нова версія з виправленням поки що не сформована. Для демонстрації прояву вразливості опубліковано приклад файлу, що викликає переповнення під час запуску split -C 1024 ./split_me.</p>
+            <p class="date">25.01.2024</p>
+          </div>
+        </article>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>
