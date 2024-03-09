@@ -25,6 +25,20 @@ body {
   padding: 20px 10px;
 }
 
+
+input[type=text] {
+  padding:10px;
+  background-color: #1a1b26;
+  color: #b4f9f8;
+  border-color: #eee;
+  border-width: 1px;
+
+  font-size: 17px;
+  border: none;
+  width:120px;
+  font-family: "Fira Code", monospace;
+}
+
 .header a {
   float: left;
   text-align: center;
@@ -73,6 +87,10 @@ a:hover {
   color: #f7768e;
 }
 
+.title-h2{
+  color: #b4f9f8;
+}
+
 .text p {
   color: #b4f9f8;
 }
@@ -92,6 +110,11 @@ a:hover {
   padding: 10px;
 }
 
+.books{
+  margin-top: 10px;
+  padding: 10px;
+}
+
 .projects {
   display: flex;
   justify-content: space-around;
@@ -100,7 +123,7 @@ a:hover {
 }
 
 .card {
-  width: 420px;
+  max-width: 300px;
   margin: 5px;
   margin-top: 20px;
   border: 1px solid #f7768e;
@@ -134,6 +157,19 @@ a:hover {
   color: #f7768e;
   font-size: 17px;
 }
+
+.text-project .authors{
+  color: #b4f9f8;
+  font-size: 15px;
+}
+
+/* books */
+
+.book-menu{
+  margin-top: 20px;
+  text-align: center;
+}
+
 
 @media screen and (max-width: 500px) {
   .header a {

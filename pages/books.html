@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>LibreSpace</title>
+</head>
+
+<body>
+    <div class="header">
+        <a href="../index.html" class="logo">LibreSpace</a>
+        <div class="header-right">
+            <input type="text" placeholder="search" id="mySearch" name="search" oninput="myFunction()">
+            <a href="../index.html">/головна</a>
+            <a href="./news.html">/новини</a>
+            <a class="active" href="./pages/books.html">/книжки</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="book-menu">
+            <a href="#novel">Романи</a>
+            <a href="#programming">Програмування</a>
+            <a href="#linux">Linux</a>
+            <a href="#math">Математика</a>
+            <a href="#physics">Фізика</a>
+            <a href="#philosophy">Філософія</a>
+        </div>
+        <!-- Романи -->
+        <div class="books">
+            <h2 class="title-h2" id="novel">Романи</h2>
+        </div>
+        <div class="projects" id="novelBooks">
+            <article class="card">
+                <img src="../images/books/metro2033.png"/>
+                <div class="text-project">
+                    <a href="../db/books/Метро 2033.pdf">Metro 2033</a>
+                    <p class="authors">by Dmitry Glukhovsky</p>
+                </div>
+            </article>
+            <article class="card">
+                <img src="../images/books/metro2034.png"/>
+                <div class="text-project">
+                    <a href="../db/books/">Metro 2034</a>
+                    <p class="authors">by Dmitry Glukhovsky</p>
+                </div>
+            </article>
+            <article class="card">
+                <img src="../images/books/metro2035.png"/>
+                <div class="text-project">
+                    <a href="../db/books/МЕТРО 2035.pdf">Metro 2035</a>
+                    <p class="authors">by Dmitry Glukhovsky</p>
+                </div>
+            </article>
+        </div>
+
+        <!-- Програмування -->
+        <div class="books">
+            <h2 class="title-h2" id="programming">Програмування</h2>
+        </div>
+        <div class="projects" id="programmingBooks">
+            <article class="card">
+                <img src="../images/books/the_c_programming_language.png"/>
+                <div class="text-project">
+                    <a href="../db/books/The C Programming Language.pdf">The C programming language</a>
+                    <p class="authors">by Brian W. Kernighan, Dennis M. Ritchie</p>
+                </div>
+            </article>
+        </div>
+        <!-- - -->
+    </div>
+</body>
+<script src="../scripts/main.js"></script>
+</html>
