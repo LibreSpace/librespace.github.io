@@ -1,74 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style/style.css" />
     <title>LibreSpace</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="header">
-        <a href="../index.html" class="logo">LibreSpace</a>
-        <div class="header-right">
-            <input type="text" placeholder="search" id="mySearch" name="search" oninput="myFunction()">
-            <a href="../index.html">/головна</a>
-            <a href="./news.html">/новини</a>
-            <a class="active" href="./pages/books.html">/книжки</a>
-        </div>
+      <a href="../index.html" class="logo">LibreSpace</a>
+      <div class="header-right">
+        <input
+          type="text"
+          placeholder="пошук"
+          id="mySearch"
+          name="search"
+          oninput="myFunction()"
+        />
+        <a href="../index.html">/головна</a>
+        <a href="./news.html">/новини</a>
+        <a class="active" href="./pages/books.html">/книжки</a>
+      </div>
     </div>
     <div class="container">
-        <div class="book-menu">
-            <a href="#novel">Романи</a>
-            <a href="#programming">Програмування</a>
-            <a href="#linux">Linux</a>
-            <a href="#math">Математика</a>
-            <a href="#physics">Фізика</a>
-            <a href="#philosophy">Філософія</a>
-        </div>
-        <!-- Романи -->
-        <div class="books">
-            <h2 class="title-h2" id="novel">Романи</h2>
-        </div>
-        <div class="projects" id="novelBooks">
-            <article class="card">
-                <img src="../images/books/metro2033.png"/>
-                <div class="text-project">
-                    <a href="../db/books/Метро 2033.pdf">Metro 2033</a>
-                    <p class="authors">by Dmitry Glukhovsky</p>
-                </div>
-            </article>
-            <article class="card">
-                <img src="../images/books/metro2034.png"/>
-                <div class="text-project">
-                    <a href="../db/books/">Metro 2034</a>
-                    <p class="authors">by Dmitry Glukhovsky</p>
-                </div>
-            </article>
-            <article class="card">
-                <img src="../images/books/metro2035.png"/>
-                <div class="text-project">
-                    <a href="../db/books/МЕТРО 2035.pdf">Metro 2035</a>
-                    <p class="authors">by Dmitry Glukhovsky</p>
-                </div>
-            </article>
-        </div>
+      <div class="book-menu">
+        <a href="#novel">Романи</a>
+        <a href="#programming">Програмування</a>
+        <a href="#linux">Linux</a>
+        <a href="#math">Математика[скоро]</a>
+        <a href="#physics">Фізика[скоро]</a>
+        <a href="#philosophy">Філософія[скоро]</a>
+      </div>
+      <!-- Романи -->
+      <div class="books">
+        <h2 class="title-h2" id="novel">Романи</h2>
+      </div>
+      <div class="projects" id="novelBooks">
+        <article class="card">
+          <img src="../images/books/metro2033.png" />
+          <div class="text-project">
+            <a href="../db/books/Novels/Метро 2033.pdf">Metro 2033</a>
+            <p class="authors">by Dmitry Glukhovsky</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="../images/books/metro2034.png" />
+          <div class="text-project">
+            <a href="../db/books/Novels/METRO-2034.fb2">Metro 2034</a>
+            <p class="authors">by Dmitry Glukhovsky</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="../images/books/metro2035.png" />
+          <div class="text-project">
+            <a href="../db/books/Novels/МЕТРО 2035.pdf">Metro 2035</a>
+            <p class="authors">by Dmitry Glukhovsky</p>
+          </div>
+        </article>
+      </div>
 
-        <!-- Програмування -->
-        <div class="books">
-            <h2 class="title-h2" id="programming">Програмування</h2>
-        </div>
-        <div class="projects" id="programmingBooks">
-            <article class="card">
-                <img src="../images/books/the_c_programming_language.png"/>
-                <div class="text-project">
-                    <a href="../db/books/The C Programming Language.pdf">The C programming language</a>
-                    <p class="authors">by Brian W. Kernighan, Dennis M. Ritchie</p>
-                </div>
-            </article>
-        </div>
-        <!-- - -->
+      <!-- Програмування -->
+      <div class="books">
+        <h2 class="title-h2" id="programming">Програмування</h2>
+      </div>
+      <div class="projects" id="programmingBooks">
+        <article class="card">
+          <img src="../images/books/the_c_programming_language.png" />
+          <div class="text-project">
+            <a href="../db/books/Programming/The C Programming Language.pdf"
+              >The C programming language</a
+            >
+            <p class="authors">by Brian W. Kernighan, Dennis M. Ritchie</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="../images/books/learn_you_a_haskell_for_great_good.png" />
+          <div class="text-project">
+            <a
+              href="../db/books/Programming/learn_you_a_haskell_for_great_good.pdf"
+              >Learn You a Haskell for Great Good (УКР версія)</a
+            >
+            <p class="authors">by Miran Lipovaca</p>
+          </div>
+        </article>
+      </div>
+      <!-- - -->
+
+      <!-- Linux -->
+      <div class="books">
+        <h2 class="title-h2" id="linux">Linux</h2>
+      </div>
+      <div class="projects" id="programmingBooks">
+        <article class="card">
+          <img
+            src="../images/books/linux pocket guide: essential commands.png"
+          />
+          <div class="text-project">
+            <a href="../db/books/Linux/Linux Pocket Guide 3rdpdf - PDF Room.pdf"
+              >Linux Pocket Guide(ENG версія)</a
+            >
+            <p class="authors">by Daniel J. Barrett</p>
+          </div>
+        </article>
+        <article class="card">
+            <img
+              src="../images/books/The Linux Command Line.png"
+            />
+            <div class="text-project">
+              <a href="../db/books/Linux/The Linux Command Line.pdf"
+                >The Linux Command Line(ENG версія)</a
+              >
+              <p class="authors">by William Shotts</p>
+            </div>
+          </article>
+      </div>
     </div>
-</body>
-<script src="../scripts/main.js"></script>
+  </body>
+  <script src="../scripts/main.js"></script>
 </html>
